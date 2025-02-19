@@ -1,14 +1,21 @@
-import { Button } from '@/components/ui/button'
-import { InputField, InputIcon, InputRoot } from '@/components/ui/input'
-import { Copy, Link } from 'lucide-react'
 import Image from 'next/image'
 
 import logo from '@/assets/logo.svg'
 import { IndicationsRanking } from './_components/indications-ranking'
-import { Statistics } from './_components/statistics'
 import { LinkInput } from './_components/link-input'
+import { Statistics } from './_components/statistics'
 
-export default function Contato() {
+type InvitePageProps = {
+  params: Promise<{
+    subscriberId: string
+  }>
+}
+
+export default async function InvitePage({ params }: InvitePageProps) {
+  const { subscriberId } = await params
+
+  const inviteLink = `http://localhost:3333/invites/${subscriberId}`
+
   return (
     <div className="min-h-dvh flex items-center justify-evenly gap-16 flex-col md:flex-row">
       <div className="flex flex-col gap-10 w-full max-w-[550px]">
@@ -34,9 +41,9 @@ export default function Contato() {
             </p>
           </div>
 
-          <LinkInput inviteLink='http:localhost:3000/invite/46546456456n456456n4' />
+          <LinkInput inviteLink={inviteLink} />
 
-          <Statistics />
+          <Statistics subscriberId={subscriberId} />
         </div>
       </div>
 

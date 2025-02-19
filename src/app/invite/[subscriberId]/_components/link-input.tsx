@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { InputField, InputIcon, InputRoot } from '@/components/ui/input'
 import { Copy, Link } from 'lucide-react'
 
-interface LinkInputProps {
+type LinkInputProps = {
   inviteLink: string
 }
 
@@ -18,10 +18,7 @@ export function LinkInput({ inviteLink }: LinkInputProps) {
       <InputIcon>
         <Link className="size-5" />
       </InputIcon>
-      <InputField
-        readOnly
-        defaultValue={inviteLink}
-      />
+      <InputField readOnly defaultValue={inviteLink} />
 
       <Button
         type="button"
