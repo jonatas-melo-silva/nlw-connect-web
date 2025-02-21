@@ -1,34 +1,140 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 NLW Connect Web - Rocketseat
 
-## Getting Started
+**Projeto construído durante o NLW Connect** - Um evento intensivo de 3 dias que elevou minhas skills frontend a outro nível! 💜
 
-First, run the development server:
+[![React](https://img.shields.io/badge/React-19-%2361DAFB?style=flat&logo=react)](https://react.dev)
+[![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat&logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org)
+
+## 📸 Screenshots/GIFs
+
+<div align="center">
+  <img src=".github/preview-home.png" alt="Preview do projeto" width="80%">
+  <img src=".github/preview-invites.png" alt="Preview do projeto" width="80%">
+  <img src=".github/demo.gif" alt="GIF demonstrativo" width="80%">
+</div>
+
+## 🗺️ Roadmap
+
+Estes são os próximos passos planejados para o projeto:
+
+- **✅ Testes automatizados**  
+  Adicionar testes unitários com **Vite** e testes E2E com **Cypress** para garantir a qualidade do código.
+
+- **🔐 Autenticação social**  
+  Implementar login com **Google** e **GitHub** usando NextAuth.js ou Clerk.
+
+- **🚀 Deploy contínuo**  
+  Configurar CI/CD para deploy automático na **Vercel** ou **Netlify**.
+
+- **🌓 Dark/Light Mode**  
+  Adicionar suporte a temas escuro e claro, com persistência de preferência do usuário.
+
+- **📱 Responsividade aprimorada**  
+  Melhorar a experiência em dispositivos móveis.
+
+Quer contribuir com alguma dessas features? [Abra uma issue](https://github.com/jonatas-melo-silva/nlw-connect-web/issues) ou envie um PR! 🚀
+
+## ✨ Features
+
+- ✅ Componentes acessíveis e altamente reutilizáveis
+- ✅ Validação de formulários com Zod + React Hook Form
+- ✅ Estilização eficiente com Tailwind CSS
+- ✅ Linting ultra-rápido usando Biome (2x mais rápido que ESLint!)
+- ✅ Arquitetura organizada e escalável
+- ✅ Integração com Radix UI para componentes primitivos
+
+## 🛠️ Tecnologias
+
+### Core Stack
+
+- **Next.js 15** (App Router)
+- **React 19** (Canary)
+- **TypeScript 5**
+- **Tailwind CSS** + Tailwind Merge
+
+### Ferramentas-chave
+
+- **Zod**: Validação type-safe
+- **React Hook Form**: Gerenciamento de formulários
+- **Radix UI**: Componentes acessíveis
+- **Lucide React**: Ícones modernos
+- **Class Variance Authority**: Variants em componentes
+
+### Dev Tools
+
+- **Biome**: Formatação e linting relâmpago ⚡
+- **Orval**: Geração automática de clients API
+- **PostCSS**: Processamento CSS moderno
+
+## 🚀 Começando
+
+### Pré-requisitos
+
+- Node.js 18+
+- npm 9+
+
+### Instalação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone o repositório
+git clone https://github.com/jonatas-melo-silva/nlw-connect-web.git
+
+# Instale as dependências
+npm install
+
+# Configure as variáveis de ambiente (se necessário)
+cp .env.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ▶️ Executando
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Modo desenvolvimento
+npm run dev
 
-## Learn More
+# Build de produção
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+# Formatação e linting
+npm run write
+npm run check
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contribuindo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contribuições são sempre bem-vindas! Para contribuir:
 
-## Deploy on Vercel
+1. Faça um fork do repositório.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Crie uma branch para sua feature ou correção:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    git checkout -b minha-feature
+    ```
+
+3. Commit suas alterações:
+
+    ```bash
+    git commit -m "Adicionei uma nova feature"
+    ```
+
+4. Faça um push para a branch:
+
+    ```bash
+    git push origin minha-feature
+    ```
+
+5. Abra um Pull Request no repositório original.
+
+Siga as melhores práticas para garantir que suas alterações sejam revisadas e aceitas rapidamente.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+Feito com 💜 por [Jonatas Melo Silva](https://github.com/jonatas-melo-silva) durante o NLW Connect da Rocketseat.  
+
+**Dica profissional:** ⭐️ Deixe sua estrela no repositório se gostou do projeto!
